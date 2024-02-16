@@ -1,4 +1,4 @@
-# Salesforce Development Interview Project
+# Salesforce Developer Interview Project
 
 ## Project Requirements
 > Merz Aesthetics Customer Service representatives must quickly get the updated status of a
@@ -9,7 +9,7 @@ service defined below and displays the response to the end user.
 
 ## Project Solution
 1. object\Shipment
-   - This solution is dependent on the standard **Shipment** object that is part of Salesforce Order Management. All standard fields are utilized so need for the object to be in this reposistory for now. If not familiar with this part of the platform you should explore the [Order Management Resources](https://help.salesforce.com/s/articleView?id=sf.om_order_management_resources.htm&type=5) published by Salesforce.   
+   - This solution is dependent on the standard **Shipment** object that is part of Salesforce Order Management. All standard fields are utilized so no need for the object to be in this reposistory for now. If not familiar with this part of the platform you should explore the [Order Management Resources](https://help.salesforce.com/s/articleView?id=sf.om_order_management_resources.htm&type=5) published by Salesforce.   
 
 1. lwc\shipmentStatus
    - This Lightning Web Component is intended to be placed on the default "Shipment" Lightning Record Page assigned to Customer Service Representatives when using the standard Order Management App. The component leverages @wire for efficient access to the records data and events. In addition to rendering sucessful Shipment Status results, the component also has basic logic for error handling and providing visual feedback to the user.
