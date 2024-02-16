@@ -1,13 +1,13 @@
 # Salesforce Development Interview Project
 
-###Project Requirements
+##Project Requirements
 Merz Aesthetics Customer Service representatives must quickly get the updated status of a
 customer shipment. When viewing the standard Shipment page in Salesforce, the rep wants to be
 able to view a Lightning Web Component that displays the latest status of the Shipment based on
 the tracking number of the Shipment record. Develop an LWC that calls the mock shipping status 
 service defined below and displays the response to the end user.
 
-###Project Solution
+##Project Solution
 1. object\Shipment
     This solution is dependent on the standard **Shipment** object that is part of Salesforce Order Management. All standard fields are utilized so need for the object to be in this reposistory for now. If not familiar with this part of the platform you should explore the [Order Management Resources](https://help.salesforce.com/s/articleView?id=sf.om_order_management_resources.htm&type=5) published by Salesforce.   
 
@@ -17,7 +17,7 @@ service defined below and displays the response to the end user.
 1. classes\shipmentStatusCallout
     This Apex Class has an @AuraEnabled method that initiats a callout to the mock shipping status service (also currently hosted on SFDC). The class can be extended later if the shipping service support a bulk response or if further platform side automation or DML is required.
 
-###Setup
+##Setup
 1. Administrative Setup
     - The callout to the mock shipping status service is dependent on a Named Credential (where its hosted), External Credential
     (how we authenticate with it) and Principal (who can call it). You will need to perform a one time manual setup of these items in order to sucessfully use the lwc\shipments component on the Shipment Lightning Record Page.
