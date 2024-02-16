@@ -1,23 +1,23 @@
 # Salesforce Development Interview Project
 
-##Project Requirements
-Merz Aesthetics Customer Service representatives must quickly get the updated status of a
+## Project Requirements
+> Merz Aesthetics Customer Service representatives must quickly get the updated status of a
 customer shipment. When viewing the standard Shipment page in Salesforce, the rep wants to be
 able to view a Lightning Web Component that displays the latest status of the Shipment based on
 the tracking number of the Shipment record. Develop an LWC that calls the mock shipping status 
 service defined below and displays the response to the end user.
 
-##Project Solution
+## Project Solution
 1. object\Shipment
-    This solution is dependent on the standard **Shipment** object that is part of Salesforce Order Management. All standard fields are utilized so need for the object to be in this reposistory for now. If not familiar with this part of the platform you should explore the [Order Management Resources](https://help.salesforce.com/s/articleView?id=sf.om_order_management_resources.htm&type=5) published by Salesforce.   
+   - This solution is dependent on the standard **Shipment** object that is part of Salesforce Order Management. All standard fields are utilized so need for the object to be in this reposistory for now. If not familiar with this part of the platform you should explore the [Order Management Resources](https://help.salesforce.com/s/articleView?id=sf.om_order_management_resources.htm&type=5) published by Salesforce.   
 
 1. lwc\shipmentStatus
-    This Lightning Web Component is intended to be placed on the default "Shipment" Lightning Record Page assigned to Customer Service Representatives when using the standard Order Management App. In addition to rendering sucessful Shipment Status results, the component also has basic logic for error handling and providing visual feedback to the user.
+   - This Lightning Web Component is intended to be placed on the default "Shipment" Lightning Record Page assigned to Customer Service Representatives when using the standard Order Management App. The component leverages @wire for efficient access to the records data and events. In addition to rendering sucessful Shipment Status results, the component also has basic logic for error handling and providing visual feedback to the user.
 
 1. classes\shipmentStatusCallout
-    This Apex Class has an @AuraEnabled method that initiats a callout to the mock shipping status service (also currently hosted on SFDC). The class can be extended later if the shipping service support a bulk response or if further platform side automation or DML is required.
+    - This Apex Class has an @AuraEnabled method that initiats a callout to the mock shipping status service (also currently hosted on SFDC). The class can be extended later if the shipping service expands to support a bulk response or if further platform side automation or DML is required.
 
-##Setup
+## Setup
 1. Administrative Setup
     - The callout to the mock shipping status service is dependent on a Named Credential (where its hosted), External Credential
     (how we authenticate with it) and Principal (who can call it). You will need to perform a one time manual setup of these items in order to sucessfully use the lwc\shipments component on the Shipment Lightning Record Page.
@@ -55,4 +55,14 @@ service defined below and displays the response to the end user.
     - View the Shipment record and select the Setup "gear" icon at the top right of your page and then "Edit Page". 
     - This will launch the Lightning App Builder, find the shipmentStatus component under the Custom compoents section on the left and drag it onto the page layout
     - click Save at the top right of the page
-    
+  
+## Screenshots
+
+- ![image](https://github.com/manthesails/MerzDevProject/assets/7214780/02f338b8-f958-4b24-88a1-391846b7c999)
+
+-![image](https://github.com/manthesails/MerzDevProject/assets/7214780/af265f95-f9ab-480b-8cbe-2c0579386758)
+
+-![image](https://github.com/manthesails/MerzDevProject/assets/7214780/a88b00d8-21c9-4442-b3ce-e376e62f0cb2)
+
+ 
+
