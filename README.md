@@ -58,11 +58,11 @@ service defined below and displays the response to the end user.
   
 ## Screenshots
 
-- ![image](https://github.com/manthesails/MerzDevProject/assets/7214780/02f338b8-f958-4b24-88a1-391846b7c999)
+![image](https://github.com/manthesails/MerzDevProject/assets/7214780/02f338b8-f958-4b24-88a1-391846b7c999)
 
--![image](https://github.com/manthesails/MerzDevProject/assets/7214780/af265f95-f9ab-480b-8cbe-2c0579386758)
+![image](https://github.com/manthesails/MerzDevProject/assets/7214780/af265f95-f9ab-480b-8cbe-2c0579386758)
 
--![image](https://github.com/manthesails/MerzDevProject/assets/7214780/a88b00d8-21c9-4442-b3ce-e376e62f0cb2)
+![image](https://github.com/manthesails/MerzDevProject/assets/7214780/a88b00d8-21c9-4442-b3ce-e376e62f0cb2)
 
  
 
